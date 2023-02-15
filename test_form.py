@@ -13,7 +13,7 @@ wait = WebDriverWait(driver, 20)
 options.add_argument("--disable-blink-features=AutomationControlled")
 
 
-def test_mate():
+def test_form():
     user = generate_user()
     driver.get("https://demoqa.com/automation-practice-form")
     driver.set_window_size(1920, 1080)

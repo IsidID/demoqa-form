@@ -18,3 +18,13 @@ def generate_user():
     NameSur = f'{firstName} {lastName}'
     date = f'{day} {month},{year}'
     return firstName, lastName, email, randomDigit, phone, address, fakedate, day, month, year, randomDigit2, NameSur, date
+
+def user_login():
+    return {'username':f'{fake.profile()["username"]}test{fake.word()}{str(random.randint(1, 3))}',
+            'firstName':f'{fake.word()}{fake.word()}',
+            'lastname': f'{fake.word()}{fake.word()}',
+            'password': 'Password1!'
+            }
+
+user = user_login()
+print(user['username'])
